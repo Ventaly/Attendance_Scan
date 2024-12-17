@@ -18,7 +18,7 @@ def read_status():
 
 @app.post("/upload")
 async def upload_image(file: UploadFile = File(...)):
-    """curl -X POST http://http://172.16.19.208:8080/upload
+    """curl -X POST http://http://172.16.19.208:8081/upload
     上传图片并处理，返回结果
     """
     # 保存上传的图片到本地
@@ -51,6 +51,6 @@ async def upload_image(file: UploadFile = File(...)):
 
         "Daily_Records": daily_json["Daily_Records"]
     }
-
+    print()
     # 返回结果
     return JSONResponse(content=combined_json)
