@@ -22,12 +22,16 @@ def find_date_distance(result, start_date, end_date):
 
     # 检查是否找到了起始和结束日期，如果没找到，寻找下一对差值为7的日期对
     if found_start_date and found_end_date:
-        print()
-        print()
+
         distance =found_end_date-found_start_date  # 计算起始日期的下边界和结束日期的上边界之间的距离
         return distance
     else:
-        find_date_distance(result,start_date+1,end_date+1)
+        next_start_date = start_date + 1
+        next_end_date = end_date + 1
+
+        # 递归调用，寻找下一个日期对
+        return find_date_distance(result, next_start_date, next_end_date)
+        # 如果没有找到任何日期对，返回None
 
     return None
 
@@ -47,7 +51,7 @@ if __name__ == '__main__':
     )
 
     # 检查图片路径
-    img_path = 'Image/任思源.jpg'
+    img_path = 'Image/黄乐月.jpg'
     if os.path.exists(img_path):
         print("路径存在。")
     else:
@@ -75,10 +79,10 @@ if __name__ == '__main__':
         scores=None  # 不显示置信度
 
     )
-
+    distance=find_date_distance(result, 3, 10)
     # 确定裁剪坐标
-    x1, y1 = 82, 149  # 左上角坐标
-    x2, y2 = 94, 161  # 右下角坐标
+    x1, y1 = 117, 162  # 左上角坐标
+    x2, y2 = 132, 175  # 右下角坐标
     y2 = y2 + 15
     # 裁剪出3所在的位置
     cropped_image = image[int(y1):int(y2), int(x1):int(x2)]

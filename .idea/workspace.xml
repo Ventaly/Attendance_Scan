@@ -4,39 +4,302 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34f7ddd0-055e-43ba-b00a-e058011e822d" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Attendance_Scan.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/test2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/attendance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image_Preprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paddle_OCR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Region_Detection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Attendance1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Attendance2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/EasyOCR_Attendance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Paddle_Attendance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Pytesseract_Attendance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/TEST.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/cropped_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/digit_dict.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/merge_res.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/processed_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/remade.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/test3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+    <list default="true" id="34f7ddd0-055e-43ba-b00a-e058011e822d" name="更改" comment="refactor(Test): 重命名测试文件并优化 OCR 识别功能- 将 TEST.py 重命名为 PaddleOCRTest.py&#10;-移除了未使用的导入和注释代码&#10;- 添加了 find_date_distance 函数，用于计算特定日期之间的距离&#10;- 更新了主程序逻辑，实现了图像裁剪和结果保存功能&#10;- 优化了代码结构，提高了代码可读性和维护性">
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/丁凯.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/丁红强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/万强.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/严阳.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/乔亚磊.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/乔永康.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/于杰.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/于江河.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/任思源.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/任登凯.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/何序文.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/何生飞.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/余承平.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/余星辰.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/俞机灵.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/关义晴.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘卫熔.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘哲.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘婉莹.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘富强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘晗.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘梦雅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘梦飞.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘正宇.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘磊.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘进.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘际强.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/刘青.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/劳智浩.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/卢杰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/吕网.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/吕萍.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/吕辉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/周吉祥.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/周思羽.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/周星利.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/周黎.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/唐旭东.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/唐金庚.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/唐镇.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/喻永明.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/孙明东.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/尹越.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/崔克勤.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/庆曙光.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/张伟.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/张俊.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/张帅.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/张文斌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/张桥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/张飞.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/张飞.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/彭世强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/徐国强.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/徐德银.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/徐雨攀.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/戚永奎.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/房爱智.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/曹熙杰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/朱一珉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/朱云飞.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/朱佳华.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/朱慧敏.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/朱谦.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/朱雄伟.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李云涛.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李兆龙.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李冰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李山峰.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李智.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李栋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李海军.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李琳.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李硕.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/李缘.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/杨丹锋.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/杨建年.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/杨科超.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/杨飞宇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/查子晨.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/柯慧超.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/梁伟明.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/梁建勇.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/梅富程.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/樊立星.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/毕书丽.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/江驰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/池大勇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/汪仕才.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/汪鑫.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/沈晨.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/沙凤耘.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/洪日波.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王亚运.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王宁.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王岩.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王建设.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王开鹏.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王文俊.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王晓亮.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王权.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王桂杰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王梦梅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王海东.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王涵.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王璟璟.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/王辉海.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/祁皓宇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/祝如玉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/竺兴鹏.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/简开放.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/缪云.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/罗青.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/耿瑞锦.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/花文超.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/苟武妍哲.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/英光明.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/葛丝龙.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/蒋浩.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/贾嶺.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/贾鑫隆.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/赵乐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/赵云琪.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/赵文祥.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/邓振华.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/郁川东.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/郝绍辉.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/郭全成.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/陆宏梁.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/陈思威.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/陈星羽.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/陈松.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/陈颖.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/韩梦佳.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/韩欢.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/韩爽.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/顾娟.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/颜思理.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/马玉青.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/高瑞.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/魏月.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/黄乐月.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年10月/黄新诚.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/丁凯.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/丁红强.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/万强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/严阳.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/乔亚磊.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/乔永康.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/于杰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/于江河.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/任思源.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/任登凯.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/何序文.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/何生飞.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/余承平.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/关义晴.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘卫熔.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘哲.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘婉莹.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘富强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘晗.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘梦雅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘梦飞.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘正宇.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘磊.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘进.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘长杰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘际强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/刘青.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/劳智浩.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/卢杰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/吕辉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/周吉祥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/周星利.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/周黎.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/唐旭东.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/唐金庚.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/唐镇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/宣明明.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/尹越.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/崔克勤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/庆曙光.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/张伟.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/张俊.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/张帅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/张文斌.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/张桥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/张飞.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/彭世强.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/徐国强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/徐德银.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/徐雨攀.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/戚永奎.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/房爱智.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/曹熙杰.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/朱云飞.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/朱佳华.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/朱慧敏.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/朱谦.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/朱雄伟.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/李云涛.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/李冰.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/李山峰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/李栋.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/李琳.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/李硕.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/杨建年.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/杨睿.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/杨科超.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/杨飞宇.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/查子晨.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/柯慧超.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/梁伟明.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/梁建勇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/梅富程.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/毕书丽.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/江驰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/汪仕才.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/汪鑫.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/沙凤耘.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/洪日波.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王宁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王岩.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王建设.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王开鹏.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王强.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王文俊.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王晓亮.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王权.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王桂杰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王梦梅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王海东.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王涵.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王璟璟.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/王辉海.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/祁皓宇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/祝如玉.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/竺兴鹏.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/缪云.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/罗青.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/耿瑞锦.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/花文超.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/苟武妍哲.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/英光明.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/葛丝龙.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/蒋浩.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/谢超-1天年假，2个半天年假.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/贾嶺.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/贾鑫隆.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/赵乐.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/赵云琪.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/赵俊杰.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/赵文祥.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/邓振华.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/郁川东.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/郝绍辉.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/郭全成.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/陆宏梁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/陈思威.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/陈松.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/韩梦佳.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/韩欢.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/韩爽.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/顾娟.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/颜思理.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/马玉青.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/高瑞.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/魏月.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/黄乐月.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/2024年11月/黄新诚.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/contours_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/output_path.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/output_with_boxes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/output_with_boxes1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/KmeansTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Regin_Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/胡翔.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/dataset/Attendance.v2i.yolov5-obb.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Attendance1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Attendance2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/EasyOCR_Attendance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/PaddleOCRTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/PaddleOCRTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Paddle_Attendance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pytesseract_Attendance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/cropped_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/digit_dict.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/merge_res.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/processed_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +328,20 @@
       </branch-storage>
     </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ventaly&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Ventaly/Attendance_Scan.git&quot;,
+    &quot;accountId&quot;: &quot;915b4fc4-a46d-4bdc-ba59-408bb8cbf201&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/test2.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -82,6 +358,8 @@
   "keyToString": {
     "Python.Attendance1.executor": "Run",
     "Python.Attendance2.executor": "Run",
+    "Python.PaddleOCRTest.executor": "Debug",
+    "Python.Regin_Test.executor": "Run",
     "Python.Region_Detection.executor": "Debug",
     "Python.TEST (1).executor": "Run",
     "Python.TEST.executor": "Run",
@@ -94,7 +372,7 @@
     "Python.test4.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "BR1",
     "last_opened_file_path": "D:/Users/Administrator/PycharmProjects/Attendance_Scan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,13 +388,14 @@
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\resources\dataset" />
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\Test" />
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan" />
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\Image" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api">
-    <configuration name="Region_Detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PaddleOCRTest">
+    <configuration name="PaddleOCRTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Attendance_Scan" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,12 +404,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Region_Detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/PaddleOCRTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Regin_Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Attendance_Scan" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/Regin_Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,44 +510,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Attendance_Scan" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/test4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.test2" />
+      <item itemvalue="Python.PaddleOCRTest" />
+      <item itemvalue="Python.Regin_Test" />
       <item itemvalue="Python.api" />
-      <item itemvalue="Python.test3 (1)" />
-      <item itemvalue="Python.test4" />
-      <item itemvalue="Python.Region_Detection" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.test3 (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.api" />
+        <item itemvalue="Python.PaddleOCRTest" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.Regin_Test" />
+        <item itemvalue="Python.api" />
         <item itemvalue="Python.test3 (1)" />
-        <item itemvalue="Python.test4" />
-        <item itemvalue="Python.Region_Detection" />
       </list>
     </recent_temporary>
   </component>
@@ -270,34 +549,54 @@
       <workItem from="1733915593072" duration="6850000" />
       <workItem from="1733983580943" duration="43900000" />
       <workItem from="1734312904124" duration="36092000" />
+      <workItem from="1734423710043" duration="15356000" />
     </task>
+    <task id="LOCAL-00001" summary="&#10;版本：1.01&#10;refactor(api): 更新 API 文档并添加调试信息&#10;&#10;- 修改 upload_image 函数的文档注释，更新 API 请求的端口为8081&#10;- 在处理完图像后添加空行打印，用于调试和日志记录">
+      <option name="closed" value="true" />
+      <created>1734399649400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734399649400</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor(Test): 重命名测试文件并优化 OCR 识别功能- 将 TEST.py 重命名为 PaddleOCRTest.py&#10;-移除了未使用的导入和注释代码&#10;- 添加了 find_date_distance 函数，用于计算特定日期之间的距离&#10;- 更新了主程序逻辑，实现了图像裁剪和结果保存功能&#10;- 优化了代码结构，提高了代码可读性和维护性">
+      <option name="closed" value="true" />
+      <created>1734485849730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734485849730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&#10;版本：1.01&#10;refactor(api): 更新 API 文档并添加调试信息&#10;&#10;- 修改 upload_image 函数的文档注释，更新 API 请求的端口为8081&#10;- 在处理完图像后添加空行打印，用于调试和日志记录" />
+    <MESSAGE value="版本：1.01&#10;refactor(api): 更新 API 文档并添加调试信息&#10;&#10;- 修改 upload_image 函数的文档注释，更新 API 请求的端口为8081&#10;- 在处理完图像后添加空行打印，用于调试和日志记录" />
+    <MESSAGE value="refactor(Test): 重命名测试文件并优化 OCR 识别功能- 将 TEST.py 重命名为 PaddleOCRTest.py&#10;-移除了未使用的导入和注释代码&#10;- 添加了 find_date_distance 函数，用于计算特定日期之间的距离&#10;- 更新了主程序逻辑，实现了图像裁剪和结果保存功能&#10;- 优化了代码结构，提高了代码可读性和维护性" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(Test): 重命名测试文件并优化 OCR 识别功能- 将 TEST.py 重命名为 PaddleOCRTest.py&#10;-移除了未使用的导入和注释代码&#10;- 添加了 find_date_distance 函数，用于计算特定日期之间的距离&#10;- 更新了主程序逻辑，实现了图像裁剪和结果保存功能&#10;- 优化了代码结构，提高了代码可读性和维护性" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Test/test2.py</url>
-          <line>451</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Test/test2.py</url>
-          <line>260</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Test/test2.py</url>
-          <line>364</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Test/TEST.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="63" />
+          <url>file://$PROJECT_DIR$/Test/PaddleOCRTest.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -312,6 +611,8 @@
       <configuration name="PythonConfigurationType">
         <watch expression="img_with_merged_contours" />
         <watch expression="text" />
+        <watch expression="word_info" />
+        <watch expression="result" />
       </configuration>
     </watches-manager>
   </component>
@@ -319,12 +620,14 @@
     <SUITE FILE_PATH="coverage/Attendance_Scan$test2.coverage" NAME="test2 覆盖结果" MODIFIED="1733986086659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$Region_Detection.coverage" NAME="Region_Detection 覆盖结果" MODIFIED="1734339091533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$test4.coverage" NAME="test4 覆盖结果" MODIFIED="1734341488991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/Attendance_Scan$main.coverage" NAME="main 覆盖结果" MODIFIED="1734349850079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Attendance_Scan$main.coverage" NAME="main 覆盖结果" MODIFIED="1734409624240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$Attendance2.coverage" NAME="Attendance2 覆盖结果" MODIFIED="1733916709408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$TEST__1_.coverage" NAME="TEST (1) 覆盖结果" MODIFIED="1734329370628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/Attendance_Scan$Regin_Test.coverage" NAME="Regin_Test 覆盖结果" MODIFIED="1734403441493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$test3.coverage" NAME="test3 覆盖结果" MODIFIED="1734070928232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$test3__1_.coverage" NAME="test3 (1) 覆盖结果" MODIFIED="1734349290578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$Attendance1.coverage" NAME="Attendance1 覆盖结果" MODIFIED="1733709638182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Attendance_Scan$PaddleOCRTest.coverage" NAME="PaddleOCRTest 覆盖结果" MODIFIED="1734487339236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$test1.coverage" NAME="test1 覆盖结果" MODIFIED="1733989804684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$TEST.coverage" NAME="TEST 覆盖结果" MODIFIED="1734054164167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$api.coverage" NAME="api 覆盖结果" MODIFIED="1734350515958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

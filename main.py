@@ -9,7 +9,7 @@ from Region_Detection import detect_and_display_regions, crop_region_from_origin
 if __name__ == '__main__':
 
 
-    img, resized_img = preprocess_image("attendance.png")
+    img, resized_img = preprocess_image("Image/2024年11月/11月份E点通打卡-谢超/20241101.png")
     month_region, month_regions, date_region, date_regions = detect_and_display_regions(resized_img)
     # 提取月份信息
     cropped_result1 = crop_region_from_original(img, month_regions)
@@ -38,10 +38,8 @@ if __name__ == '__main__':
 
     # 打印合并后的JSON数据
     json_str =json.dumps(combined_json, ensure_ascii=False, indent=4)
+    print(json)
 
-    with open('output.json', 'w', encoding='utf-8') as f:
-        # 将JSON字符串写入文件
-        f.write(json_str)
 
     print("JSON数据集已成功写入文件。")
 
