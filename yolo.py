@@ -25,7 +25,8 @@ def detect_objects(model, image_path):
     # 加载图片
     img = cv2.imread(image_path)
     results = model(img)  # 推理
-
+    # 图片名称
+    file_name = filename = os.path.splitext(os.path.basename(image_path))[0]
     # 获取结果（boxes：边界框，conf：置信度，names：类别名称）
     xyxy_tensor = results.xyxy[0].cpu().numpy()
 
@@ -38,7 +39,15 @@ def detect_objects(model, image_path):
         x1, y1, x2, y2 = max(0, x1), max(0, y1), min(img.shape[1], x2), min(img.shape[0], y2)
         # 根据 class_id 判断类别并裁剪
         cropped_img = img[int(y1):int(y2), int(x1):int(x2)]
-
+        # 保存路径
+        save_dir = "Image/2024年10月/cropped"  # 目标目录
+        file_name = f"{file_name}_{class_id}.jpg"
+        # 确保目标目录存在
+        os.makedirs(save_dir, exist_ok=True)
+        # 拼接完整路径
+        full_path = os.path.join(save_dir, file_name)
+        print("路径"+full_path)
+        cv2.imwrite(full_path,cropped_img)
         if int(class_id) == 0:
             paddleocr = PaddleOCR(lang='ch', show_log=False)
             result = paddleocr.ocr(cropped_img)
@@ -60,24 +69,9 @@ def detect_objects(model, image_path):
         else:
             print(f"Unknown Class {class_id} detected.")
 
-    # 打印提取的结果
-
-    for detection in detections:
-        x1, y1, x2, y2 = detection['bbox']
-        class_id = detection['class_id']
-        # 确保边界框坐标不超出图像尺寸
-        x1, y1, x2, y2 = max(0, x1), max(0, y1), min(img.shape[1], x2), min(img.shape[0], y2)
-        # 裁剪图像
 
 
-        # 显示裁剪后的图像
 
-        cv2.imwrite('path_to_save_cropped_image.jpg', cropped_img)
-   # 获取边界框坐标
-    conf = results.conf[0].gpu().numpy()  # 获取置信度
-    names = results.names  # 类别名称
-
-    return boxes, conf, names, img
 
 
 def get_coordinates_and_crop_image(boxes, conf, names, image, conf_threshold=0.25):
@@ -150,18 +144,14 @@ def main(image_folder, model_weights='runs/train/exp4/weights/best.pt', conf_thr
             print(f"Processing {image_filename}...")
 
             # 获取推理结果
-            boxes, conf, names, img = detect_objects(model, image_path)
+            detect_objects(model, image_path)
 
-            # 获取每个区域的坐标并进行裁剪
-            cropped_images, coordinates = get_coordinates_and_crop_image(boxes, conf, names, img, conf_threshold)
 
-            # 保存裁剪后的图像
-            save_cropped_images(cropped_images, coordinates, output_dir='output')
 
     print("Process complete.")
 
 
 if __name__ == '__main__':
     # 输入图片文件夹路径
-    image_folder = 'Image/test/'  # 更改为你的图片文件夹路径
+    image_folder = '/home/gqa/zx/Attendance_Scan/Image/2024年10月/'  # 更改为你的图片文件夹路径
     main(image_folder)

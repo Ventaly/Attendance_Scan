@@ -4,150 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34f7ddd0-055e-43ba-b00a-e058011e822d" name="更改" comment="refactor(Test): 删除旧的测试代码并添加新的 Kmeans 测试&#10;&#10;- 删除了 Test 目录下的多个旧测试文件&#10;- 新增了 KmeansTest.py 文件用于颜色聚类测试&#10;- 更新了 main.py 中的图像处理流程">
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance.v2i.yolov5-obb.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.050846072476962c83708e5197081cda.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.0cb42e0185023f28c2c21c00c89167b1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.191c9fdc179a37341c65103d22ef0173.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.255bcec1389e18e106f875cd98d8d8e7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.2b6d2fb2299c6be4406b99110c3c04d0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.36cff8401f7238a15c5734ce56a72eee.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.3b4b6ccf5ae6d64f2d393b7bb3b9c8a2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.41757ae4caded4d4c55586851c42154f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.4ab58ea7e3312c294b69a3ff01278613.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.61f49301cf551e39c0799a01d8461626.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.6570202727a97bf3bb0be7991b540688.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.6a347372170c658edb6e277e76c2ddbf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.6e7df412d70ce2bdd374f28af7b4212f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.71bfcdc7ec33cd7b92575b9f7081d8b3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.79dcd7caa4802e1eb54839dde30fb909.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.97002b8372d621aed73df7b927d3b004.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.9e631b00a284554c64ae433a98caaada.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.a2bbe0e26d99aa9e9e5f5a9e8957ccf4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.aaed83244ddd3a12fae7b137e582e9ff.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.b2ff6afcf58abbbea9215eb3a36d2e3a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.bc95e3728fdabcd235447874aaf2c49a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.c341a88e1bd27a1391679aa56671cdd7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.cd8ad54cdc56f7fff419521053caf9bf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.cee4e4440d4882db37ea210ff76f3b67.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.d4475b2cfaf4a4831d80627a50a26636.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.d6591807df3cc5a62c0eafc9425af46f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.e0f71f5abb5a5baec24209c9027c80b0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.e69647bf6aa0b1273dd81e2682fa05da.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_jpg.rf.fb4273edb931fbc8828105eb17e5de95.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.01c46337d6a67d13139e4ffb6b25aaf5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.127cd801bce9683e0b907c63a9ee6102.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.171b56b371d719029ed618da3fb2d29c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.2d9ee2e718d553d393ccd7d79eebd0b5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.33bd69c9017b74d06972fe932e33f88d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.4000a02b03808f4d8875a41bafc499e2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.4aab15e20b76d122225d0787a1c33030.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.504a4a4220e9baff89d0ee35e4a24d66.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.50882a43bf55bb84c7ff30d9c35072dd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.53ce4ea80628f997a9697c9c571747a1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.6ee4fcff14534f6eddfbd6f673a7aa65.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.72e1d5911ab6f7b8e2c2c337e96971e2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.73962b9a718a80a9b5c535185c67208d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.7425bc48d547bcc6db04d694db938a71.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.7da376806caf3b278e4448f9fc6bde3d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.8c7752434056fd5c67c72b806a9c2e25.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.a5e34462cba5837366df8ebacc39d383.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.a62b8a9c6cb0428108c808aee7f5544b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.a83f3b4b4b8006fd82ec160c68753b40.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.aa480a3583cb8f7ba2b843f36344fca5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.aa69ab0e421c2ddfda617fdf6bd442e5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.b96a2e1ea2474e2a1c2191365e907285.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.c1fc3aa0d3b0d93afc0aef236fbdcea4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.c73873b3330444afa4e60ca753d8e145.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.d3f6cbd868fe58092cf321cc9db98597.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.d6e3e530dffbca4b58ce3273ec2be278.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.db3ec55c2d10195a8ca75797c012eab8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.dbdce3ba5742dfcc3ee137aac76896ce.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.e78e5471e7ab88906935c8837ab4d59b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.e8aec0ae031da852742adf78b6db9242.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.ee6165d3e565f536bd80a567bb49ade0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.f5cfb1c1ed44e791811856b945bf9746.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/train/-_png.rf.ff3e91175de317dda19b3d8b5233e5e8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.0c2b322c7b66b90f7e01b572ec57ed1c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.0d11266f5698b207b98b450d26b6294f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.1351294c8e2e4fab07e00714c34f7862.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.1c5c0faaa641041ad15c8019dd50b67a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.28cbf3880adf6f6840bfcc1e8382c09c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.3a723d459dc1bbce5e3b3b99a5cf37c8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.594ace2efa4b34a521766eb0c3b5375d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.5e1a8bb43e4dd5dfc01605e3b790c2ef.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.739b4bcf8191a3dd6c218eaaec2ec78f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.9b226d9f7e17815621390ff4c3d4df2a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.9fbcce0ad2859b69a7c3179f16bb30b7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.b5c51d640249fcea42161fca395b98e9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.b93e288fa763338e3b3d3e810f1d633e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.c7c603b295f4e0fdc3ec7a53b4231220.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.cfcecbd6b573bc1f5ee690fe4deeb685.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.e0e3fa48a2532a3bf2e65d1e05b9f173.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.ec6a7c86737082cedc7f1dffc72eaf2e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_jpg.rf.f2282fb706b47b49005c9a44416cd107.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.060dd33bb16f3ba05758da92b958b69d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.0955ac5ee86e1a2bb952426de3eb808f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.1071926b9d8ce8d710a17bcc15b9214b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.1664bf53ddb03bb7db7cd5af85269866.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.3086690b656b91002b0bb8f83ab78b60.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.3670c9e55aa4f5896eba052e29d7267e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.40ab0090cc8a0fbdef4f0a694012d1e7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.6a9f5ce69c2e80a0414ba7a832469823.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.6ad1edce5e8c670034c5f7c80b78272d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.6f8cd19dec293c802c09658f1170931e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.71ff115e746bf83131b2bba68538e915.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.84109f9baf36fc568fa213350cdbc849.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.ae4fb09a52cdd9f18a7a0961173e8b53.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.d02d9a997eeb425da35881febdd475df.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.d7c461e91be5cf1c9ae4730fcfb61d3e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.da78c6b66c47f95b477bc63689924924.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/Attendance/labels/val/-_png.rf.ee7b5c80619d33b082fdce5d8d0d91f2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/README.dataset.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/README.roboflow.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/data.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.078f1c8ee6caa2d74d053cfbe8718d32.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.30cbd3c88a64ec3857f36c656a32d595.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.40bd3cd2bdd875366063b52b63a3b0c3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.47718d7b43e73ca5d3b185a9e5d37a85.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.4bbb8ce86a7db47673034d55c531a743.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.65ac597a82ae0b4f1a2b3c3d02c4998c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.6991a6b19275d9ca0be8870d4d519364.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.6c378e61f6e8dde632f1b882d08e87ea.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.6e2dc82c9ba8a9d808f46497453e1ed0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.71d751a4d09532e392a26fb83c657c00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.a22f36af46fe9a146132c2f9e6fc071d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.aa2a25171687f2fc734a9504ee31aedb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.b6a2cdbcfd684623b6cd6c0734d2b3c4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.b8e485b3f631f2beb0463ea9230ccb1c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.ca0d222c86fb99993b3bfdfca9502c4b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.ce0ffb2ad43fd2fb3f49f4579d7e182c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.e88ae6d548728fc8e3631547c69e99e5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_jpg.rf.ed64ee5deecb820dff82e923e1004196.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.0d4d7f3ee26d50d84882ccf0c48addc0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.2153f79ef8e2c1a990b5eae554aaf7ec.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.419a43e4b7a9d90409e8e0616c9de751.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.4cdd94b80570bf6e57e64b5f8cd6c09a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.4dad21b5999bbf7f1639f4d68b6f6287.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.4f38bbbdbfb4ef66b9a73fb8d7e7f882.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.51a930800ccb0de366135a6818f41cb7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.8388f95aa4d2b05b4a3e243bc36723b4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.85f42aa369589cde91a089d14cd32d68.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.99b45689a26d55801e3c27d1e48bc977.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.9e28125f6df1ffa09d03a122568e8dc1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.a7b8ba01e86c45ffccc71f36de8cb16b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.ad4f80a10b3fb5a9ca622e31e2ccdcf4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.d6738aa4dcb9165c90bf3487d35a6e54.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolov5/dataset/yolov5/test/labelTxt/-_png.rf.fa32bfe34ea617a653fcf11417b82e96.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="34f7ddd0-055e-43ba-b00a-e058011e822d" name="更改" comment="添加模型输出后操作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Region_Detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Region_Detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolov5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolov5/data/scripts/download_weights.sh" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/data/scripts/download_weights.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolov5/data/scripts/get_coco.sh" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/data/scripts/get_coco.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolov5/data/scripts/get_coco128.sh" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/data/scripts/get_coco128.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolov5/data/scripts/get_imagenet.sh" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/data/scripts/get_imagenet.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,35 +61,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Attendance1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Attendance2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PaddleOCRTest.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.Regin_Test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Region_Detection.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.TEST (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.TEST.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test2.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.test3 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test4.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;BR1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Users/Administrator/PycharmProjects/Attendance_Scan/yolov5/dataset/Attendance/labels/val&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Attendance1.executor": "Run",
+    "Python.Attendance2.executor": "Run",
+    "Python.PaddleOCRTest.executor": "Debug",
+    "Python.Regin_Test.executor": "Run",
+    "Python.Region_Detection.executor": "Debug",
+    "Python.TEST (1).executor": "Run",
+    "Python.TEST.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.test1.executor": "Run",
+    "Python.test2.executor": "Debug",
+    "Python.test3 (1).executor": "Run",
+    "Python.test3.executor": "Run",
+    "Python.test4.executor": "Run",
+    "Python.yolo.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "BR1",
+    "last_opened_file_path": "D:/Users/Administrator/PycharmProjects/Attendance_Scan/yolov5/dataset/Attendance/labels/val",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance\labels\val" />
@@ -247,7 +107,7 @@
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PaddleOCRTest">
+  <component name="RunManager" selected="Python.yolo">
     <configuration name="PaddleOCRTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Attendance_Scan" />
       <option name="ENV_FILES" value="" />
@@ -340,7 +200,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="yolo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Attendance_Scan" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -349,12 +209,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/test3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yolo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -365,19 +225,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test2" />
+      <item itemvalue="Python.yolo" />
       <item itemvalue="Python.PaddleOCRTest" />
       <item itemvalue="Python.Regin_Test" />
       <item itemvalue="Python.api" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.test3 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.yolo" />
         <item itemvalue="Python.PaddleOCRTest" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.Regin_Test" />
         <item itemvalue="Python.api" />
-        <item itemvalue="Python.test3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +264,7 @@
       <workItem from="1734312904124" duration="36092000" />
       <workItem from="1734423710043" duration="15596000" />
       <workItem from="1734487753972" duration="8818000" />
-      <workItem from="1734501992438" duration="10028000" />
+      <workItem from="1734501992438" duration="24488000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;版本：1.01&#10;refactor(api): 更新 API 文档并添加调试信息&#10;&#10;- 修改 upload_image 函数的文档注释，更新 API 请求的端口为8081&#10;- 在处理完图像后添加空行打印，用于调试和日志记录">
       <option name="closed" value="true" />
@@ -430,7 +290,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734487606821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(dataset): 添加 Attendance 数据集标签&#10;- 训练yolo模型来进行区域检测&#10;- 在 yolov5/dataset/Attendance/labels 目录下新增多个标签文件&#10;- 文件内容包含 daily、month-daily-name 和 name 三种标签&#10;- 标签格式为：x1 y1 x2 y2 x3 y3 x4 y4 label confidence">
+      <option name="closed" value="true" />
+      <created>1734514977735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734514977735</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加模型输出后操作">
+      <option name="closed" value="true" />
+      <created>1734526207794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734526207794</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +328,9 @@
     <MESSAGE value="版本：1.01&#10;refactor(api): 更新 API 文档并添加调试信息&#10;&#10;- 修改 upload_image 函数的文档注释，更新 API 请求的端口为8081&#10;- 在处理完图像后添加空行打印，用于调试和日志记录" />
     <MESSAGE value="refactor(Test): 重命名测试文件并优化 OCR 识别功能- 将 TEST.py 重命名为 PaddleOCRTest.py&#10;-移除了未使用的导入和注释代码&#10;- 添加了 find_date_distance 函数，用于计算特定日期之间的距离&#10;- 更新了主程序逻辑，实现了图像裁剪和结果保存功能&#10;- 优化了代码结构，提高了代码可读性和维护性" />
     <MESSAGE value="refactor(Test): 删除旧的测试代码并添加新的 Kmeans 测试&#10;&#10;- 删除了 Test 目录下的多个旧测试文件&#10;- 新增了 KmeansTest.py 文件用于颜色聚类测试&#10;- 更新了 main.py 中的图像处理流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(Test): 删除旧的测试代码并添加新的 Kmeans 测试&#10;&#10;- 删除了 Test 目录下的多个旧测试文件&#10;- 新增了 KmeansTest.py 文件用于颜色聚类测试&#10;- 更新了 main.py 中的图像处理流程" />
+    <MESSAGE value="feat(dataset): 添加 Attendance 数据集标签&#10;- 训练yolo模型来进行区域检测&#10;- 在 yolov5/dataset/Attendance/labels 目录下新增多个标签文件&#10;- 文件内容包含 daily、month-daily-name 和 name 三种标签&#10;- 标签格式为：x1 y1 x2 y2 x3 y3 x4 y4 label confidence" />
+    <MESSAGE value="添加模型输出后操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加模型输出后操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -461,6 +339,11 @@
           <url>file://$PROJECT_DIR$/Test/PaddleOCRTest.py</url>
           <line>98</line>
           <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/yolo.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -477,6 +360,8 @@
         <watch expression="text" />
         <watch expression="word_info" />
         <watch expression="result" />
+        <watch expression="results" />
+        <watch expression="results.xyxy" />
       </configuration>
     </watches-manager>
   </component>
@@ -495,5 +380,6 @@
     <SUITE FILE_PATH="coverage/Attendance_Scan$test1.coverage" NAME="test1 覆盖结果" MODIFIED="1733989804684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$TEST.coverage" NAME="TEST 覆盖结果" MODIFIED="1734054164167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$api.coverage" NAME="api 覆盖结果" MODIFIED="1734350515958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Attendance_Scan$yolo.coverage" NAME="yolo 覆盖结果" MODIFIED="1734528246616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
