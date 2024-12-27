@@ -9,7 +9,7 @@ from Region_Detection import detect_and_display_regions, crop_region_from_origin
 if __name__ == '__main__':
 
 
-    img, resized_img = preprocess_image("Image/2024年11月/11月份E点通打卡-谢超/20241101.png")
+    img, resized_img = preprocess_image("Image/attendance.png")
     month_region, month_regions, date_region, date_regions = detect_and_display_regions(img,resized_img)
     # 提取月份信息
     cropped_result1 = crop_region_from_original(img, month_regions)

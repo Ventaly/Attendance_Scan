@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34f7ddd0-055e-43ba-b00a-e058011e822d" name="更改" comment="添加模型输出后操作">
+    <list default="true" id="34f7ddd0-055e-43ba-b00a-e058011e822d" name="更改" comment="12.18日修改：修改yolo结果输出处理，裁剪图片到指定文件夹">
+      <change afterPath="$PROJECT_DIR$/Ocr_Bbox_Crop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/PaddleOCRTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/PaddleOCRTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,43 +64,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Attendance1.executor": "Run",
-    "Python.Attendance2.executor": "Run",
-    "Python.PaddleOCRTest.executor": "Debug",
-    "Python.Regin_Test.executor": "Run",
-    "Python.Region_Detection.executor": "Debug",
-    "Python.TEST (1).executor": "Run",
-    "Python.TEST.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test1.executor": "Run",
-    "Python.test2.executor": "Debug",
-    "Python.test3 (1).executor": "Run",
-    "Python.test3.executor": "Run",
-    "Python.test4.executor": "Run",
-    "Python.yolo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "BR1",
-    "last_opened_file_path": "D:/Users/Administrator/PycharmProjects/Attendance_Scan/yolov5/dataset/Attendance/labels/val",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Attendance1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Attendance2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PaddleOCRTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Regin_Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Region_Detection.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.TEST (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.TEST.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.test3 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.yolo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;BR1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Administrator/PycharmProjects/Attendance_Scan/PaddleOCR-release-2.6&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\PaddleOCR-release-2.6" />
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance\labels\val" />
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance\images\val" />
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance\labels\train" />
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance\images\train" />
-      <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance\labels" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance\labels\train" />
@@ -107,7 +110,7 @@
       <recent name="D:\Users\Administrator\PycharmProjects\Attendance_Scan\yolov5\dataset\Attendance" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.yolo">
+  <component name="RunManager" selected="Python.PaddleOCRTest">
     <configuration name="PaddleOCRTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Attendance_Scan" />
       <option name="ENV_FILES" value="" />
@@ -233,8 +236,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.yolo" />
         <item itemvalue="Python.PaddleOCRTest" />
+        <item itemvalue="Python.yolo" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.Regin_Test" />
         <item itemvalue="Python.api" />
@@ -265,6 +268,9 @@
       <workItem from="1734423710043" duration="15596000" />
       <workItem from="1734487753972" duration="8818000" />
       <workItem from="1734501992438" duration="24488000" />
+      <workItem from="1734571400173" duration="15212000" />
+      <workItem from="1734940037790" duration="13791000" />
+      <workItem from="1735180952454" duration="13429000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;版本：1.01&#10;refactor(api): 更新 API 文档并添加调试信息&#10;&#10;- 修改 upload_image 函数的文档注释，更新 API 请求的端口为8081&#10;- 在处理完图像后添加空行打印，用于调试和日志记录">
       <option name="closed" value="true" />
@@ -306,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734526207794</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="12.18日修改：修改yolo结果输出处理，裁剪图片到指定文件夹">
+      <option name="closed" value="true" />
+      <created>1734572167425</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734572167425</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +331,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="BR1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -330,20 +356,31 @@
     <MESSAGE value="refactor(Test): 删除旧的测试代码并添加新的 Kmeans 测试&#10;&#10;- 删除了 Test 目录下的多个旧测试文件&#10;- 新增了 KmeansTest.py 文件用于颜色聚类测试&#10;- 更新了 main.py 中的图像处理流程" />
     <MESSAGE value="feat(dataset): 添加 Attendance 数据集标签&#10;- 训练yolo模型来进行区域检测&#10;- 在 yolov5/dataset/Attendance/labels 目录下新增多个标签文件&#10;- 文件内容包含 daily、month-daily-name 和 name 三种标签&#10;- 标签格式为：x1 y1 x2 y2 x3 y3 x4 y4 label confidence" />
     <MESSAGE value="添加模型输出后操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加模型输出后操作" />
+    <MESSAGE value="12.18日修改：修改yolo结果输出处理，裁剪图片到指定文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.18日修改：修改yolo结果输出处理，裁剪图片到指定文件夹" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Test/PaddleOCRTest.py</url>
-          <line>98</line>
+          <line>88</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/yolo.py</url>
           <line>49</line>
           <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Paddle_OCR.py</url>
+          <line>199</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Test/PaddleOCRTest.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -376,7 +413,7 @@
     <SUITE FILE_PATH="coverage/Attendance_Scan$test3.coverage" NAME="test3 覆盖结果" MODIFIED="1734070928232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$test3__1_.coverage" NAME="test3 (1) 覆盖结果" MODIFIED="1734349290578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$Attendance1.coverage" NAME="Attendance1 覆盖结果" MODIFIED="1733709638182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Attendance_Scan$PaddleOCRTest.coverage" NAME="PaddleOCRTest 覆盖结果" MODIFIED="1734487339236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/Attendance_Scan$PaddleOCRTest.coverage" NAME="PaddleOCRTest 覆盖结果" MODIFIED="1734580850472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$test1.coverage" NAME="test1 覆盖结果" MODIFIED="1733989804684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$TEST.coverage" NAME="TEST 覆盖结果" MODIFIED="1734054164167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Attendance_Scan$api.coverage" NAME="api 覆盖结果" MODIFIED="1734350515958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

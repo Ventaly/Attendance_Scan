@@ -4,7 +4,7 @@ import torch
 from pathlib import Path
 from PIL import Image
 from paddleocr import PaddleOCR
-
+from Ocr_Bbox_Crop import  crop_region
 from yolov5.utils.flask_rest_api.restapi import models
 from ultralytics import YOLO
 from yolov5 import  models# 根据您的YOLOv5实现导入模型架构
@@ -51,6 +51,7 @@ def detect_objects(model, image_path):
         if int(class_id) == 0:
             paddleocr = PaddleOCR(lang='ch', show_log=False)
             result = paddleocr.ocr(cropped_img)
+            text ,status=crop_region(cropped_img,result)
             print(result)
             print(f"Detected Class 0: Saving cropped region daily.")
 

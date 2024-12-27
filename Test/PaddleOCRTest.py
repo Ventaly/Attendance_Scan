@@ -65,7 +65,6 @@ if __name__ == '__main__':
     # OCR 处理
     paddleocr = PaddleOCR(lang='ch', show_log=False)
     result = paddleocr.ocr(image)
-
     # 提取结果中的边界框和文本
     boxes = [line[0] for line in result[0]]  # 获取边界框
     texts = [line[1][0] for line in result[0]]  # 获取文字内容
@@ -84,17 +83,8 @@ if __name__ == '__main__':
     x1, y1 = 117, 162  # 左上角坐标
     x2, y2 = 132, 175  # 右下角坐标
     y2 = y2 + 15
-    # 裁剪出3所在的位置
+    # 裁剪出所在的位置
     cropped_image = image[int(y1):int(y2), int(x1):int(x2)]
-
-    # 保存结果图片的目录
-    save_dir = 'Image/test'
-    # 确保目录存在
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-    output_path = os.path.join(save_dir, 'cropped_3.jpg')
-    # 保存裁剪后的图片
-    cv2.imwrite(output_path, cropped_image)
     # 转换为 BGR 格式以适配 OpenCV 显示和保存
     image_with_boxes = cv2.cvtColor(image_with_boxes, cv2.COLOR_RGB2BGR)
 
@@ -104,4 +94,4 @@ if __name__ == '__main__':
 
 
     cv2.imwrite(output_path, image_with_boxes)
-    print(f"处理后的图片已保存到：{output_path}")
+
